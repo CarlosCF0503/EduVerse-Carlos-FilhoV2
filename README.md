@@ -8,7 +8,7 @@ No estado atual (Fase 3/4 - Nuvem e Resiliência), o sistema evoluiu de um model
 ## Diagrama de Containers (C4 Nível 2)
 Abaixo, a representação arquitetural atualizada do sistema:
 
-```mermaid```
+```mermaid
 graph TD
     Estudante(["Estudante"])
     Gestao(["Coordenador / Admin TI"])
@@ -41,20 +41,14 @@ graph TD
     class WebApp,API,Worker container;
     class DB db;
     class LMS,BD_Ext externo;
-Documentação Arquitetural
+```
+## Documentação Arquitetural
 Nossas decisões e detalhamentos estão versionados nos seguintes documentos:
 
-SAD - Software Architecture Document
-
-ADR 0001 - Estratégia de Nuvem e Escalabilidade
-https://github.com/CarlosCF0503/EduVerse-Carlos-FilhoV2/blob/40037056be991b505117e8b020968044814dac73/docs/adrs/0001-estrategia-de-nuvem-e-escalabilidade.md
-
-ADR 0002 - Padrões de Resiliência (Circuit Breaker)
-https://github.com/CarlosCF0503/EduVerse-Carlos-FilhoV2/blob/40037056be991b505117e8b020968044814dac73/docs/adrs/0002-padrao-resiliencia.md
-
-ADR 0003 - Modelo de Comunicação (Assíncrona)
-https://github.com/CarlosCF0503/EduVerse-Carlos-FilhoV2/blob/40037056be991b505117e8b020968044814dac73/docs/adrs/0003-modelo-comunicacao.md
-
+* [SAD - Software Architecture Document](./docs/sad/sad-fase3.md)
+* [ADR 0001 - Estratégia de Nuvem e Escalabilidade](./docs/adrs/0001-estrategia-de-nuvem-e-escalabilidade.md)
+* [ADR 0002 - Padrões de Resiliência (Circuit Breaker)](./docs/adrs/0002-padrao-resiliencia.md)
+* [ADR 0003 - Modelo de Comunicação (Assíncrona)](./docs/adrs/0003-modelo-comunicacao.md)
 Como executar o projeto localmente
 Como o projeto utiliza Arquitetura Hexagonal, os adaptadores podem ser facilmente mockados localmente.
 
