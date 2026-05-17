@@ -1,7 +1,7 @@
 # EduVerse - Plataforma Educacional Inteligente
 
 ## Visão Executiva
-O EduVerse visa solucionar a limitação dos métodos de ensino tradicionais em identificar e suprir as lacunas de conhecimento individuais dos alunos[cite: 115]. [cite_start]A plataforma atua como uma camada de inteligência educacional que coexiste e se integra diretamente ao LMS institucional atual (ex: Moodle), não visando substituí-lo, mas sim complementá-lo. 
+O EduVerse visa solucionar a limitação dos métodos de ensino tradicionais em identificar e suprir as lacunas de conhecimento individuais dos alunos.A plataforma atua como uma camada de inteligência educacional que coexiste e se integra diretamente ao LMS institucional atual (ex: Moodle), não visando substituí-lo, mas sim complementá-lo. 
 
 No estado atual (Fase 3/4 - Nuvem e Resiliência), o sistema evoluiu de um modelo monolítico para uma Arquitetura Hexagonal com forte isolamento de domínio, preparada para implantação em nuvem (Cloud Native).O foco atual é garantir escalabilidade para suportar mais de 3.000 alunos simultâneos sem degradação do serviço  e resiliência na comunicação com o sistema legado.
 
