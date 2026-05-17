@@ -47,10 +47,13 @@ Nossas decisões e detalhamentos estão versionados nos seguintes documentos:
 SAD - Software Architecture Document
 
 ADR 0001 - Estratégia de Nuvem e Escalabilidade
+https://github.com/CarlosCF0503/EduVerse-Carlos-FilhoV2/blob/40037056be991b505117e8b020968044814dac73/docs/adrs/0001-estrategia-de-nuvem-e-escalabilidade.md
 
 ADR 0002 - Padrões de Resiliência (Circuit Breaker)
+https://github.com/CarlosCF0503/EduVerse-Carlos-FilhoV2/blob/40037056be991b505117e8b020968044814dac73/docs/adrs/0002-padrao-resiliencia.md
 
 ADR 0003 - Modelo de Comunicação (Assíncrona)
+https://github.com/CarlosCF0503/EduVerse-Carlos-FilhoV2/blob/40037056be991b505117e8b020968044814dac73/docs/adrs/0003-modelo-comunicacao.md
 
 Como executar o projeto localmente
 Como o projeto utiliza Arquitetura Hexagonal, os adaptadores podem ser facilmente mockados localmente.
