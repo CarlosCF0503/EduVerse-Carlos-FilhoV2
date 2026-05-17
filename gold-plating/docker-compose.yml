@@ -1,0 +1,38 @@
+version: '3.8'
+services:
+  eduverse-core-api:
+    image: node:18-alpine
+    container_name: core_api
+    ports:
+      - "3000:3000"
+    environment:
+      - DB_HOST=eduverse-db
+      - RABBITMQ_URL=amqp://message-broker
+    depends_on:
+      - eduverse-db
+      - message-broker
+
+  eduverse-sync-worker:
+    image: node:18-alpine
+    container_name: sync_worker
+    environment:
+      - DB_HOST=eduverse-db
+      - RABBITMQ_URL=amqp://message-broker
+    depends_on:
+      - eduverse-db
+      - message-broker
+
+  eduverse-db:
+    image: postgres:15-alpine
+    container_name: pg_database
+    environment:
+      - POSTGRES_USER=admin
+      - POSTGRES_PASSWORD=secret
+      - POSTGRES_DB=eduverse
+
+  message-broker:
+    image: rabbitmq:3-management-alpine
+    container_name: rabbitmq_queue
+    ports:
+      - "5672:5672"
+      - "15672:15672"
